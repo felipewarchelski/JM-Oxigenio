@@ -1,0 +1,41 @@
+@media screen and (max-width: 1669px) {
+    .jmoxigenio {
+        position: absolute;
+        width: 800px;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        transition: .3s;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    .jmoxigenio {
+        position: absolute;
+        width: 800px;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        transition: .3s;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .jmoxigenio {
+        position: absolute;
+        width: 800px;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        transition: .3s;
+        z-index: 1;
+    }
+}

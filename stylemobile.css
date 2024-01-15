@@ -1,0 +1,317 @@
+@media screen and (max-width: 1200px) {
+
+    /* HEADER */
+
+    .header {
+        display: none;
+    }
+
+    /* NAV */
+
+    .navbuttons {
+        display: none;
+    }
+
+    .falebut {
+        display: none;
+    }
+
+    .nav {
+        background-color: #f6f6f6;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        margin-inline: 20px;
+    }
+
+    .navimg img {
+        margin-left: 0px;
+    }
+
+    .navmobile {
+        display: flex;
+    }
+
+    /* CARROSSEL */
+
+    .carrossel {
+        position: relative; /* Defina o contêiner como relativo para que os elementos filhos usem o posicionamento relativo a ele */
+        width: 100%; /* Defina a largura desejada para o contêiner */
+        height: 800px; /* Defina a altura desejada para o contêiner (ou ajuste conforme necessário) */
+        overflow: hidden;
+    }
+
+    .carrosselmobile img {
+        filter: brightness(30%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .jmoxigenio {
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        z-index: 1;
+    
+    }
+    
+    .jmoxigenio h1 {
+        color: white;
+        font-size: 60px;
+        font-weight: 700;
+    }
+    
+    .jmoxigenio span {
+        font-style: italic;
+        font-size: 20px;
+        text-decoration: underline 2px #0e6ab5;
+        text-underline-offset: 10px;
+    }
+
+    #carouselExampleIndicators {
+        display: none;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .carrosselmobile {
+        display: flex;
+    }
+
+    /* QUEM SOMOS */
+
+    .quemsomos {
+        justify-content: center;
+        display: flex;
+        margin-top: 110px;
+        text-align: center;
+    }
+    
+    .quemsomosbox h1 {
+        font-size: 60px;
+        font-weight: 800;
+        color: #323232;
+        text-decoration: underline 2px #299cfb;
+        text-underline-offset: 10px;
+    }
+    
+    .quemsomoscontent {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 70px;
+    }
+    
+    .quemsomoscontent img {
+        display: none;
+    }
+    
+    .quemsomostext {
+        width: 90%;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    
+    .quemsomostext h1 {
+        color: #323232;
+        font-size: 25px;
+        text-align: center;
+        text-decoration: none;
+        word-wrap: break-word;
+        white-space: inherit;
+    }
+    
+    .quemsomostext span {
+        color: #323232c3;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .quemsomostext strong {
+        color: #0d89ee;
+    }
+
+    /* PRODUTOS */
+    
+    .produtos {
+        display: flex;
+        justify-content: center;
+        margin-top: 110px;
+    }
+    
+    .produtosbox {
+        justify-content: center;
+        width: 1200px;
+    }
+    
+    .produtosbox h1 {
+        font-size: 60px;
+        font-weight: 800;
+        color: #323232;
+        text-decoration: underline 2px #299cfb;
+        text-underline-offset: 10px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    /* MERCADO DE ATUAÇÃO */
+
+    .mercado {
+        margin-top: 110px;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .mercadobox {
+        justify-content: center;
+        width: 1200px;
+    }
+    
+    .mercadobox h1 {
+        font-size: 60px;
+        font-weight: 800;
+        color: #323232;
+        text-decoration: underline 2px #299cfb;
+        text-underline-offset: 10px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    /* CONTATO */
+
+    .contato {
+        margin-top: 110px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contato h1 {
+        font-size: 60px;
+        font-weight: 800;
+        color: #323232;
+        text-decoration: underline 2px #299cfb;
+        text-underline-offset: 10px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    
+    .contatobox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+    }
+    
+    .contatoleftbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 50px;
+        box-shadow: 0px 0px 50px 10px rgb(26, 26, 26, 0.1);
+        padding: 40px;
+    }
+    
+    .contatocontent h4 {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 700;
+        color: #323232;
+        margin-bottom: 25px;
+        text-decoration: underline 1px #299cfb;
+        text-underline-offset: 10px;
+        white-space: nowrap;
+    }
+
+    .endereco a {
+        text-align: center;
+    }
+
+    .horario p {
+        white-space: nowrap;
+    }
+    
+    .contatocontent i {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .mapa {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contatocontent svg {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .contatoform {
+        border-radius: 50px;
+        box-shadow: 0px 0px 50px 10px rgb(26, 26, 26, 0.1);
+        padding: 40px;
+        width: 100%;
+    }
+    
+    .contatoform h2 {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 700;
+        color: #323232;
+        margin-bottom: 25px;
+        text-decoration: underline 1px #299cfb;
+        text-underline-offset: 10px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form input, form textarea {
+        border: 0;
+        margin: 10px 0;
+        padding: 20px;
+        outline: none;
+        font-size: 16px;
+        background: #e3e3e3;
+        border-radius: 10px;
+        resize: none;
+        margin-top: 10px;
+    }
+    
+    form button {
+        text-decoration: none;
+        background: #0d89ee;
+        padding: 10px;
+        padding-inline: 15px;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        transition: .2s;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .carrosselmobile {
+        display: none;
+    }
+}

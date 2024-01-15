@@ -1,0 +1,29 @@
+Referencia concorrente:
+
+http://oxibrasil.com
+https://www.messer-br.com/
+https://www.soldaecianet.com.br/inicio
+
+Requisitos:
+1- Funcional, Objetivo, Acessível
+2- Responsivo para PC, Celular entre outros
+3- Pagina home com informações de contato(telefone e email), endereço e horário de funcionamento.
+4- Botões: Home, Quem somos, Produtos, Mercado de atuação e Contato
+5- Bottom da pagina, com informaçoes(contato(telefone e email), endereço e horário de funcionamento.)
+
+4.1- HOME
+Imagens/Carrosel infinito e automatico, tendo espaço próprio e nao ficando atras de nada(EX: https://www.soldaecianet.com.br/inicio)
+Contato(email, telefone, endereço e horario de funcionamento)
+Logo canto superior esquerdo
+
+4.2- QUEM SOMOS
+QUEM SOMOS bem grande 
+IMAGEM DE BG
+JM ESQUERDA
+TEXTO SOBRE NOS NA DIREITA
+
+4.3- PRODUTOS
+Nossos Produtos
+Varios baloes arredondados com imagens de bg e titulo do gás acima, com hover de transição para aplicações do gás
+Botão "Faça seu orçamento!" que levará para a aba de contato
+

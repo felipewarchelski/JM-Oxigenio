@@ -1,0 +1,38 @@
+.card-title1 {
+    text-align: center;
+}
+
+.card-img-top {
+    aspect-ratio: 14/9;
+}
+
+.accordion-item1 {
+    border-top: 1px solid rgba(144, 144, 144, 0.434);
+}
+
+.accordion-body1 {
+    padding-left: 15px;
+}
+
+.accordion-header1 {
+    border-bottom: none;
+    padding-top: 5px;
+}
+
+.accordion-header1 button {
+    padding: 5px;
+    padding-inline: 15px;
+}
+
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: var(--bs-primary);
+    --bs-accordion-active-color: var(--bs-primary);
+    --bs-accordion-active-bg: var(--bs-white);
+    --bs-accordion-border-color: var(--bs-white);
+}
+
+.btn-primary {
+    --bs-btn-bg: ;
+    --bs-btn-border-color: none;
+    color: #404040;
+}

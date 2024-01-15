@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+.header {
+    height: 60px;
+    background-color: #0e6ab5;
+    display: flex;
+    justify-content: center;
+}
+
+.headerbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.headerbar i {
+    display: flex;
+    align-items: center;
+}
+
+.headerbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.headerbar a:hover {
+    text-decoration: underline;
+}
+
+.headerbar svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 10px;
+}
+
+.headerbar p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.endereco p {
+    font-size: 14px;
+}
+
+/* NAV */
+
+.nav {
+    height: 100px;
+    width: 100%;
+    background-color: #e8e8e8;
+    overflow: hidden;
+    display: block;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.navbar {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .3s;
+}
+
+.navmobile {
+    display: none;
+}
+
+.navimg img {
+    width: 100px;
+    filter: drop-shadow(-10px 10px 5px #3838381f);
+    transition: .3s;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.navimg img:hover {
+    transform: scale(1.1);
+}
+
+.navbuttons a {
+    display: inline;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding-inline: 15px;
+    color: #262626;
+}
+
+.navbuttons a:hover {
+    color: #0d89ee;
+}
+
+.navbuttons.scrolled a {
+    color: white;
+}
+
+.navbuttons.scrolled a:hover {
+    color: #0d89ee;
+}
+
+.falebut {
+    transition: .3s;
+}
+
+.falebut a {
+    text-decoration: none;
+    padding: 12px 30px;
+    background-color: #0e6ab5;
+    color: white;
+    border-radius: 20px;
+}
+
+.falebut svg {
+    padding: 0;
+    margin-bottom: 3px;
+    margin-left: 5px;
+}
+
+.falebut a:hover {
+    background-color: #0d89ee
+}
+
+/* CARROSEL */
+
+.carrossel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 790px;
+    overflow: hidden;
+}
+
+.carrossel img {
+    filter: brightness(30%);
+    aspect-ratio: 14/9;
+}
+
+.jmoxigenio {
+    position: absolute;
+    width: 800px;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    transition: .3s;
+    z-index: 1;
+}
+
+.jmoxigenio h1 {
+    color: white;
+    font-size: 120px;
+    font-weight: 700;
+}
+
+.jmoxigenio span {
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: underline 2px #0e6ab5;
+    text-underline-offset: 10px;
+}
+
+/* QUEM SOMOS */
+
+.quemsomos {
+    justify-content: center;
+    display: flex;
+    margin-top: 110px;
+    text-align: center;
+}
+
+.quemsomosbox h1 {
+    font-size: 70px;
+    font-weight: 800;
+    color: #323232;
+    text-decoration: underline 2px #299cfb;
+    text-underline-offset: 20px;
+}
+
+.quemsomoscontent {
+    display: inline-flex;
+    margin-top: 70px;
+    gap: 50px;
+    align-items: center;
+}
+
+.quemsomoscontent img {
+    width: 600px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.quemsomoscontent img:hover {
+    transform: scale(1.03);
+}
+
+.quemsomostext {
+    width: 500px;
+    text-align: left;
+}
+
+.quemsomostext h1 {
+    color: #323232;
+    font-size: 35px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.quemsomostext span {
+    color: #323232c3;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.quemsomostext strong {
+    color: #0d89ee;
+}
+
+/* PRODUTOS */
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+}
+
+.produtosbox {
+    justify-content: center;
+    width: 1200px;
+}
+
+.produtosbox h1 {
+    font-size: 70px;
+    font-weight: 800;
+    color: #323232;
+    text-decoration: underline 2px #299cfb;
+    text-underline-offset: 20px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* MERCADO */
+
+.mercado {
+    margin-top: 110px;
+    justify-content: center;
+    display: flex;
+}
+
+.mercadobox {
+    justify-content: center;
+    width: 1200px;
+}
+
+.mercadobox h1 {
+    font-size: 70px;
+    font-weight: 800;
+    color: #323232;
+    text-decoration: underline 2px #299cfb;
+    text-underline-offset: 20px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* CONTATO */
+
+.contato {
+    margin-top: 110px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato h1 {
+    font-size: 70px;
+    font-weight: 800;
+    color: #323232;
+    text-decoration: underline 2px #299cfb;
+    text-underline-offset: 20px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.contatobox {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.contatoleftbox {
+    border-radius: 50px;
+    box-shadow: 0px 0px 50px 10px rgb(26, 26, 26, 0.1);
+    padding: 40px;
+}
+
+.contatocontent h4 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    color: #323232;
+    margin-bottom: 25px;
+    text-decoration: underline 1px #299cfb;
+    text-underline-offset: 10px;
+}
+
+.contatocontent p {
+    margin: 7px;
+}
+
+.contatocontent a {
+    margin: 7px;
+    color: #262626;
+    text-decoration: none;
+}
+
+.contatocontent a:hover {
+    color: #299cfb;
+    text-decoration: underline;
+}
+
+.contatocontent i {
+    display: flex;
+    align-items: center;
+}
+
+.contatocontent svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.contatocontent button {
+    border: none;
+    background: none;
+}
+
+.copybutton svg {
+    margin: 0;
+    color: #262626;
+}
+
+.copybutton svg:hover {
+    color: #0d89ee;
+}
+
+.contatoform {
+    border-radius: 50px;
+    box-shadow: 0px 0px 50px 10px rgb(26, 26, 26, 0.1);
+    padding: 40px;
+    width: 500px;
+}
+
+.contatoform h2 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    color: #323232;
+    margin-bottom: 25px;
+    text-decoration: underline 1px #299cfb;
+    text-underline-offset: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    font-size: 16px;
+    background: #e3e3e3;
+    border-radius: 10px;
+    resize: none;
+    margin-top: 10px;
+}
+
+form button {
+    text-decoration: none;
+    background: #0d89ee;
+    padding: 10px;
+    padding-inline: 15px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    transition: .2s;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 110px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.footerbox2 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #262626;
+    height: 50px;
+    width: 100%;
+}
+
+.footercopyright h6{
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.footerbuttonroll {
+    position: absolute;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    margin-left: 500px;
+}
+
+/* MOBILE */
+/* ========================================================= */
+
+/* NAV */
+
+.navbuttonsmobile a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 40px;
+    color: #262626;
+}
+
+.navbuttonsmobile a:hover {
+    color: #0d89ee;
+}
+
+/* CARROSSEL */
+
+.carrosselmobile {
+    display: none;
+}
+
+.carrosselmobile img {
+    aspect-ratio: auto;
+}
+
+/* Scroll-bar */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #696969
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8e8e8e;
+    border-radius: 20px;
+}
