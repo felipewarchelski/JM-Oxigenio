@@ -14,6 +14,9 @@ function fecharOffcanvas() {
 //HOME
 function rolarHomeMobile() {
     $('#offcanvasRight').offcanvas('hide');
+    window.setTimeout(() => {
+        // Adicione aqui o código que deseja executar após 1000 milissegundos (1 segundo)
+    }, 100);
 }
 
 //QUEMSOMOS
@@ -57,7 +60,7 @@ function rolarQuemsomosMobile() {
                 window.scrollTo({
                     top: posicao - 100,
                 });
-            },);
+            },100);
         }
     }  
 }
@@ -103,7 +106,7 @@ function rolarProdutosMobile() {
                 window.scrollTo({
                     top: posicao - 100,
                 });
-            },);
+            },100);
         }
     }
 }
@@ -149,7 +152,7 @@ function rolarMercadoMobile() {
                 window.scrollTo({
                     top: posicao - 100,
                 });
-            },);
+            },100);
         }
     }
 }
@@ -195,7 +198,7 @@ function rolarContatoMobile() {
                 window.scrollTo({
                     top: posicao - 100,
                 });
-            },);
+            },100);
         }
     }
 }
