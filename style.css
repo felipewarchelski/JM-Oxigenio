@@ -456,8 +456,32 @@ form button {
     text-align: center;
     font-size: 22px;
     font-weight: 600;
-    padding-bottom: 40px;
+    padding-top: 50px;
     color: #262626;
+}
+
+.navbuttonsmobile .homenavmobile {
+    padding-top: 0px;
+}
+
+.navbuttonsmobile .enviarzap {
+    color: white;
+    background-color: #47d40f;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.navbuttonsmobile .enviarzap svg {
+    padding: 0;
+    margin-bottom: 3px;
+    margin-left: 5px;
+}
+
+.navbuttonsmobile .enviarzap:hover {
+    background-color: #3aa80e;
+    color: white;
 }
 
 .navbuttonsmobile a:hover {

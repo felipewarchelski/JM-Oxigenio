@@ -6,6 +6,16 @@ var header = document.querySelector(".header")
 var canvas = document.querySelector('.btn-primary')
 var myOffcanvas = document.getElementById('myOffcanvas')
 
+function fecharOffcanvas() {
+    var offcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasRight'));
+    offcanvas.hide();
+}
+
+//HOME
+function rolarHomeMobile() {
+    $('#offcanvasRight').offcanvas('hide');
+}
+
 //QUEMSOMOS
 var quemsomos = document.getElementById('quemsomos');
 function rolarQuemsomos() {
@@ -32,6 +42,7 @@ function rolarQuemsomos() {
 function rolarQuemsomosMobile() {
     if (window.scrollY > 0.1) {
         if (quemsomos) {
+            $('#offcanvasRight').offcanvas('hide');
             var posicao = quemsomos.offsetTop;
             window.scrollTo({
                 top: posicao,
@@ -42,6 +53,7 @@ function rolarQuemsomosMobile() {
         if (quemsomos) {
             var posicao = quemsomos.offsetTop;
             window.setTimeout(() => {
+                $('#offcanvasRight').offcanvas('hide');
                 window.scrollTo({
                     top: posicao - 100,
                 });
@@ -76,6 +88,7 @@ function rolarProdutos() {
 function rolarProdutosMobile() {
     if (window.scrollY > 0.1) {
         if (produtos) {
+            $('#offcanvasRight').offcanvas('hide');
             var posicao = produtos.offsetTop;
             window.scrollTo({
                 top: posicao,
@@ -86,6 +99,7 @@ function rolarProdutosMobile() {
         if (produtos) {
             var posicao = produtos.offsetTop;
             window.setTimeout(() => {
+                $('#offcanvasRight').offcanvas('hide');
                 window.scrollTo({
                     top: posicao - 100,
                 });
@@ -120,6 +134,7 @@ function rolarMercado() {
 function rolarMercadoMobile() {
     if (window.scrollY > 0.1) {
         if (mercado) {
+            $('#offcanvasRight').offcanvas('hide');
             var posicao = mercado.offsetTop;
             window.scrollTo({
                 top: posicao,
@@ -130,6 +145,7 @@ function rolarMercadoMobile() {
         if (mercado) {
             var posicao = mercado.offsetTop;
             window.setTimeout(() => {
+                $('#offcanvasRight').offcanvas('hide');
                 window.scrollTo({
                     top: posicao - 100,
                 });
@@ -164,6 +180,7 @@ function rolarContato() {
 function rolarContatoMobile() {
     if (window.scrollY > 0.1) {
         if (contato) {
+            $('#offcanvasRight').offcanvas('hide');
             var posicao = contato.offsetTop;
             window.scrollTo({
                 top: posicao,
@@ -174,6 +191,7 @@ function rolarContatoMobile() {
         if (contato) {
             var posicao = contato.offsetTop;
             window.setTimeout(() => {
+                $('#offcanvasRight').offcanvas('hide');
                 window.scrollTo({
                     top: posicao - 100,
                 });
