@@ -41,39 +41,26 @@ function rolarQuemsomos() {
 }
 
 function rolarQuemsomosMobile() {
-    console.log("Clicado em Quem Somos");
-
-    // Selecionar o elemento usando o ID
-    var quemsomos = document.getElementById("quemsomos");
-
-    // Verificar se o elemento foi encontrado
-    if (quemsomos) {
-        console.log("Elemento 'quemsomos' encontrado.");
-
-        // Restante do código para rolar até a posição de 'quemsomos'
-        if (window.scrollY > 0.1) {
+    if (window.scrollY > 0.1) {
+        if (quemsomos) {
             $('#offcanvasRight').offcanvas('hide');
             var posicao = quemsomos.offsetTop;
-            console.log("Rolando para:", posicao);
             window.scrollTo({
                 top: posicao,
-                behavior: 'smooth' // Adicionando scroll suave
             });
-        } else {
-            header.style.display = 'none';
+        }
+    } else {
+        header.style.display = 'none';
+        if (quemsomos) {
             var posicao = quemsomos.offsetTop;
-            console.log("Rolando para:", posicao - 100);
             window.setTimeout(() => {
                 $('#offcanvasRight').offcanvas('hide');
                 window.scrollTo({
                     top: posicao - 100,
-                    behavior: 'smooth' // Adicionando scroll suave
                 });
             },);
         }
-    } else {
-        console.log("Elemento 'quemsomos' não encontrado.");
-    }
+    }  
 }
 
 
