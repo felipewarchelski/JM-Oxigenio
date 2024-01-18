@@ -6,46 +6,15 @@ var header = document.querySelector(".header")
 var canvas = document.querySelector('.btn-primary')
 var myOffcanvas = document.getElementById('myOffcanvas')
 
-$(document).ready(function(){
-    // Adiciona um evento de clique suave a todos os links de âncora em dispositivos móveis
-    // $("a").on('click', function(event) {
-    //     // Verifica se o link tem uma âncora (hash) e evita o comportamento padrão
-    //     if (this.hash !== "") {
-    //         event.preventDefault();
-    //         // Armazena o hash
-    //         var hash = this.hash;
-    //         // Anima a rolagem da página para a âncora alvo
-    //         $('html, body').animate({
-    //             scrollTop: $(hash).offset().top
-    //         }, 800, function(){
-    //             // Adiciona o hash (#) à URL após a rolagem
-    //             window.location.hash = hash;
-    //         });
-    //     }
-    // });
-
-    // Adiciona ou remove a classe 'smooth-scroll' dependendo da largura da janela
-    $(window).on('resize', function() {
-        var isMobile = window.innerWidth < 768;
-        $("body").toggleClass("smooth-scroll", isMobile);
-    });
-
-    // Caso queira remover a classe ao iniciar a página, descomente a linha abaixo:
-    // $(window).trigger('resize');
-});
-
-
 function fecharOffcanvas() {
     var offcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasRight'));
     offcanvas.hide();
+    $('#offcanvasRight').offcanvas('hide');
 }
 
 //HOME
 function rolarHomeMobile() {
     $('#offcanvasRight').offcanvas('hide');
-    window.setTimeout(() => {
-        // Adicione aqui o código que deseja executar após 1000 milissegundos (1 segundo)
-    }, 100);
 }
 
 //QUEMSOMOS
@@ -72,27 +41,41 @@ function rolarQuemsomos() {
 }
 
 function rolarQuemsomosMobile() {
-    if (window.scrollY > 0.1) {
-        if (quemsomos) {
+    console.log("Clicado em Quem Somos");
+
+    // Selecionar o elemento usando o ID
+    var quemsomos = document.getElementById("quemsomos");
+
+    // Verificar se o elemento foi encontrado
+    if (quemsomos) {
+        console.log("Elemento 'quemsomos' encontrado.");
+
+        // Restante do código para rolar até a posição de 'quemsomos'
+        if (window.scrollY > 0.1) {
             $('#offcanvasRight').offcanvas('hide');
             var posicao = quemsomos.offsetTop;
+            console.log("Rolando para:", posicao);
             window.scrollTo({
                 top: posicao,
+                behavior: 'smooth' // Adicionando scroll suave
             });
-        }
-    } else {
-        header.style.display = 'none';
-        if (quemsomos) {
+        } else {
+            header.style.display = 'none';
             var posicao = quemsomos.offsetTop;
+            console.log("Rolando para:", posicao - 100);
             window.setTimeout(() => {
                 $('#offcanvasRight').offcanvas('hide');
                 window.scrollTo({
                     top: posicao - 100,
+                    behavior: 'smooth' // Adicionando scroll suave
                 });
-            },100);
+            },);
         }
-    }  
+    } else {
+        console.log("Elemento 'quemsomos' não encontrado.");
+    }
 }
+
 
 //PRODUTOS
 var produtos = document.getElementById('produtos');
@@ -135,7 +118,7 @@ function rolarProdutosMobile() {
                 window.scrollTo({
                     top: posicao - 100,
                 });
-            },100);
+            },);
         }
     }
 }
@@ -181,7 +164,7 @@ function rolarMercadoMobile() {
                 window.scrollTo({
                     top: posicao - 100,
                 });
-            },100);
+            },);
         }
     }
 }
@@ -227,7 +210,7 @@ function rolarContatoMobile() {
                 window.scrollTo({
                     top: posicao - 100,
                 });
-            },100);
+            },);
         }
     }
 }
