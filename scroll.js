@@ -8,21 +8,21 @@ var myOffcanvas = document.getElementById('myOffcanvas')
 
 $(document).ready(function(){
     // Adiciona um evento de clique suave a todos os links de âncora em dispositivos móveis
-    $("a").on('click', function(event) {
-        // Verifica se o link tem uma âncora (hash) e evita o comportamento padrão
-        if (this.hash !== "") {
-            event.preventDefault();
-            // Armazena o hash
-            var hash = this.hash;
-            // Anima a rolagem da página para a âncora alvo
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-                // Adiciona o hash (#) à URL após a rolagem
-                window.location.hash = hash;
-            });
-        }
-    });
+    // $("a").on('click', function(event) {
+    //     // Verifica se o link tem uma âncora (hash) e evita o comportamento padrão
+    //     if (this.hash !== "") {
+    //         event.preventDefault();
+    //         // Armazena o hash
+    //         var hash = this.hash;
+    //         // Anima a rolagem da página para a âncora alvo
+    //         $('html, body').animate({
+    //             scrollTop: $(hash).offset().top
+    //         }, 800, function(){
+    //             // Adiciona o hash (#) à URL após a rolagem
+    //             window.location.hash = hash;
+    //         });
+    //     }
+    // });
 
     // Adiciona ou remove a classe 'smooth-scroll' dependendo da largura da janela
     $(window).on('resize', function() {
