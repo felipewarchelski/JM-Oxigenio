@@ -241,3 +241,23 @@ window.addEventListener('scroll', function () {
         });
     }
 })
+
+$(document).ready(function(){
+    // Adiciona um evento de clique suave apenas aos links com a classe "rolagem-suave"
+    $("a.rolagem-suave").on('click', function(event) {
+        // Verifica se o link tem uma âncora (hash) e evita o comportamento padrão
+        if (this.hash !== "") {
+            event.preventDefault();
+            // Armazena o hash
+            var hash = this.hash;
+            // Anima a rolagem da página para a âncora alvo
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 100, function(){
+                // Adiciona o hash (#) à URL após a rolagem
+                window.location.hash = hash;
+            });
+        }
+    });
+});
+
