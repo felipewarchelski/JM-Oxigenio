@@ -243,21 +243,26 @@ window.addEventListener('scroll', function () {
 })
 
 $(document).ready(function(){
-    // Adiciona um evento de clique suave apenas aos links com a classe "rolagem-suave"
+    // Adiciona um evento de clique suave a todos os links de âncora em telas menores que 2000 pixels
     $("a.rolagem-suave").on('click', function(event) {
-        // Verifica se o link tem uma âncora (hash) e evita o comportamento padrão
-        if (this.hash !== "") {
+        // Verifica se o link tem uma âncora (hash) e se a largura da janela é menor que 2000 pixels
+        if (this.hash !== "" && window.innerWidth < 2000) {
             event.preventDefault();
             // Armazena o hash
             var hash = this.hash;
-            // Anima a rolagem da página para a âncora alvo
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 100, function(){
-                // Adiciona o hash (#) à URL após a rolagem
-                window.location.hash = hash;
-            });
+            // Define um deslocamento adicional (por exemplo, 50 pixels) antes do ponto de destino
+            var offset = $(hash).offset().top - 50;
+
+            // Adiciona um delay de 500 milissegundos (0.5 segundos)
+            setTimeout(function () {
+                // Anima a rolagem da página para a âncora alvo
+                $('html, body').animate({
+                    scrollTop: offset
+                }, 200, function(){
+                    // Adiciona o hash (#) à URL após a rolagem
+                    window.location.hash = hash;
+                });
+            }, 100); // Ajuste o valor do delay conforme necessário
         }
     });
 });
-
