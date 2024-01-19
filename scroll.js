@@ -244,7 +244,7 @@ window.addEventListener('scroll', function () {
 
 $(document).ready(function(){
     // Adiciona um evento de clique suave a todos os links de âncora em telas menores que 2000 pixels
-    $("a.rolagem-suave").on('click', function(event) {
+    $("a").on('click', function(event) {
         // Verifica se o link tem uma âncora (hash) e se a largura da janela é menor que 2000 pixels
         if (this.hash !== "" && window.innerWidth < 2000) {
             event.preventDefault();
