@@ -243,7 +243,7 @@ window.addEventListener('scroll', function () {
 })
 
 $(document).ready(function(){
-    // Adiciona um evento de clique suave a todos os links de âncora
+    // Adiciona um evento de clique suave a todos os links de âncora em dispositivos móveis
     $("a").on('click', function(event) {
         // Verifica se o link tem uma âncora (hash) e evita o comportamento padrão
         if (this.hash !== "") {
@@ -253,10 +253,20 @@ $(document).ready(function(){
             // Anima a rolagem da página para a âncora alvo
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 200, function(){
+            }, 800, function(){
                 // Adiciona o hash (#) à URL após a rolagem
                 window.location.hash = hash;
             });
         }
     });
+
+    // Adiciona ou remove a classe 'smooth-scroll' dependendo da largura da janela
+    $(window).on('resize', function() {
+        var isMobile = window.innerWidth < 768;
+        $("body").toggleClass("smooth-scroll", isMobile);
+    });
+
+    // Caso queira remover a classe ao iniciar a página, descomente a linha abaixo:
+    // $(window).trigger('resize');
 });
+
