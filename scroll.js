@@ -244,7 +244,7 @@ window.addEventListener('scroll', function () {
 
 $(document).ready(function(){
     // Adiciona um evento de clique suave a todos os links de âncora em dispositivos móveis
-    $("a").on('click', function(event) {
+    $("a.rolagem-suave").on('click', function(event) {
         // Verifica se o link tem uma âncora (hash) e evita o comportamento padrão
         if (this.hash !== "") {
             event.preventDefault();
